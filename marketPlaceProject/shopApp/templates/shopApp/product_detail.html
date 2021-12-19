@@ -1,0 +1,9 @@
+{% extends "shopApp/base_generic.html" %}
+
+{% block content %}
+  <h1>Name: {{ product.name }}</h1>
+
+  <p><strong>Brand:</strong> {{ product.brand }}</p>
+  <p><strong>Category:</strong> {% for category in product.category.all %} {{ category }}{% if not forloop.last %}, {% endif %}{% endfor %}</p>
+
+{% endblock %}
