@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     # name of the apps should be added here
     #'rest_framework',
     'shopApp',
+    'users',
 ]
 
 MIDDLEWARE = [
